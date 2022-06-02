@@ -1,0 +1,51 @@
+div#header{
+    background-image: url(./assets/images/HeaderImage.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80vh;
+    padding:100px;
+    grid-template-rows: 1fr 1fr;
+    margin:0;
+    box-sizing: border-box;
+}
+div#spacer{
+    min-height: 6%;
+}
+p#three{
+    font-size:0.6rem;
+}
+button{
+    color:white;
+    background: rgb(10, 0, 10);
+    font-weight: 600;
+    padding: 20px 50px;
+    border: none;
+    cursor: pointer;
+}
+button:hover{
+    opacity: 0.7;
+    transition-duration: 0.5s;
+}
+p.one{
+    font-weight: 600;
+    font-size: 2rem;
+    margin: 0;
+}
+span#special{
+    font-weight: 800;
+}
+div#group{
+    width: 100%;
+    z-index: 100;
+}
+div#group p{
+    margin: 0;
+}
+
+@media only screen and (max-width: 480px){
+	/*Small smartphones [325px -> 425px]*/
+    p#two{
+        width: 300px;
+    }
+}

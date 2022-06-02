@@ -1,0 +1,143 @@
+nav{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* padding: 0 50px; */
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+p{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+div.subflex{
+    display: flex;
+    height: 10vh;
+}
+div.subflex div{
+    margin-right: 20px;
+}
+.navbut1{
+    background: white;
+    color: black;
+    font-weight: 600;
+}
+.navbut2{
+    background: white;
+    color: black;
+    font-weight: 600;
+    border: 1px solid;
+    padding:20px 60px;
+
+}
+.navbut2:hover{
+    background-color: rgb(10, 0, 10);
+    transition-duration: 0.3s;
+    color: white;
+}
+p#c{
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+div#new{
+    width: 400px;
+    background-color: blue;
+}
+.container {
+    display: none;
+    cursor: pointer;
+  }
+  
+  .bar1, .bar2 {
+    width: 25px;
+    height: 2px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+  .bar3{
+    width: 12.5px;
+    height: 2px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+ 
+.ham{
+    padding:20px 40px;
+    max-width: 200px;
+}
+
+div.subflex div{
+    cursor: pointer;
+    display: grid;
+    place-items: center;
+    height: 95%;
+    font-weight: 600;
+}
+div.subflex div:hover{
+    border-bottom:2px solid purple;
+    transition-duration: 0.1s;
+}
+/* Rotate first bar */
+.change1 {
+    -webkit-transform: rotate(-45deg) translate(0px, 0px) ;
+    transform: rotate(-45deg) translate(-5px, 0px) ;
+    width: 25px;
+    height: 2px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+  
+  /* Fade out the second bar */
+  .change2 {
+    opacity: 0;
+  }
+  
+  /* Rotate last bar */
+  .change3  {
+    -webkit-transform: rotate(45deg) translate(0px, 0px) ;
+    transform: rotate(45deg) translate(-5px, 0px) ;
+    width: 25px;
+    height: 2px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+
+@media only screen and (max-width: 1100px){
+	/*Small smartphones [325px -> 425px]*/
+    nav div#p, nav div#y, nav div#l, nav div#k{
+        display:none
+    }
+    div.container{
+        display: inline-block;
+        cursor: pointer;
+    }
+    div.menu{
+        display: grid;
+        place-items: center;
+        padding: 0 50px;
+    }
+    div.menu div:nth-child(1), div.menu div:nth-child(2), div.menu div:nth-child(3){
+        justify-self: start;
+    }
+    div.menu div{
+        font-size: 1.3rem;
+        font-weight: 600;
+        margin-bottom: 20px;
+    }
+    div.menu div:nth-child(1):hover, div.menu div:nth-child(2):hover, div.menu div:nth-child(3):hover{
+        border-bottom:1px solid purple ;
+        cursor: pointer;
+    }
+    div#button_menu > *{
+        margin-right: 20px;
+    }
+
+}
